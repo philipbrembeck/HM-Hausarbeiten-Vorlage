@@ -2,6 +2,9 @@
  LATEX-Vorlage für Hausarbeiten an der Hochschule München nach den aktuellen Vorgaben zum wissenschaftlichen Arbeiten.
 
  Inspieriert von [SimonHirner/Hochschule-Muenchen-LaTeX-Template](https://github.com/SimonHirner/Hochschule-Muenchen-LaTeX-Template).
+ 
+ ## Jetzt ausprobieren
+ Auf diesem Webservice könnt ihr die Vorlage mit eigenen Daten ausprobieren: [https://brembeck.me/hm/](https://brembeck.me/hm/index.php)
 
  ## Aufbau 
 
