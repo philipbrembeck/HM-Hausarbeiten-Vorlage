@@ -5,14 +5,14 @@
 
  ## Aufbau 
 
-* Titelblatt [title](pages/title.tex)
+* Titelblatt [`title`](pages/title.tex)
 * Inhaltsverzeichnis
-* Einleitung [introduction](pages/introduction.tex)
-* Durchführungsteil [execution](pages/execution.tex)
-* Schlussteil [conclusion](pages/conclusion.tex)
-* Literaturverzeichnis [in biliography.bib](biliography.bib)
-* Anhang (nicht nummeriert) [appendix](pages/appendix.tex)
-* Eigenständigkeitserklärung [declaration](pages/declaration.tex)
+* Einleitung [`introduction`](pages/introduction.tex)
+* Durchführungsteil [`execution`](pages/execution.tex)
+* Schlussteil [`conclusion`](pages/conclusion.tex)
+* Literaturverzeichnis [in `biliography.bib`](biliography.bib)
+* Anhang (nicht nummeriert) [`anhang`](pages/anhang.tex)
+* Eigenständigkeitserklärung [`declaration`](pages/declaration.tex)
 
 ## Einstellungen
 
