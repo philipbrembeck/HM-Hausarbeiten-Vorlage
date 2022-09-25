@@ -1,5 +1,5 @@
 
-<img src="https://user-images.githubusercontent.com/4144601/192153979-576def8f-cf69-497b-834c-2c7528971e73.png" alt="LATEX Logo" width="150" align="right">
+<img src="https://user-images.githubusercontent.com/4144601/192153979-576def8f-cf69-497b-834c-2c7528971e73.png" alt="LATEX Logo" width="80" align="right">
 
 # Hochchule München Hausarbeiten Vorlage
 Click [here for english](#university-of-applied-sciences-munich-term-paper-template).
@@ -34,7 +34,7 @@ Mit diesem Webservice könnt ihr die Vorlage mit eigenen Daten ausprobieren und/
 Dieses Repository und seine Inhalte stehen unter der [WTFPL – Do What the Fuck You Want to Public License](LICENSE)-Lizenz.
 
 --- 
-<img src="https://user-images.githubusercontent.com/4144601/192153979-576def8f-cf69-497b-834c-2c7528971e73.png" alt="LATEX Logo" width="150" align="right">
+<img src="https://user-images.githubusercontent.com/4144601/192153979-576def8f-cf69-497b-834c-2c7528971e73.png" alt="LATEX Logo" width="80" align="right">
 
 # University of Applied Sciences Munich Term Paper Template
 
