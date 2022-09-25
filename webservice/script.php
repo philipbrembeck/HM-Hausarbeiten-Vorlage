@@ -1,5 +1,47 @@
 <?php
 if (isset($_GET['getUniversity'])){
+	$title = $_GET['getTitle'];
+	if($_GET['language'] == "ngerman"){
+		$arbeit = "Arbeit an der";
+		$studiengang = "Studiengang";
+		$fachsemster = "Fachsemster";
+		$matrikelnummer = "Martikelnummer";
+		$email = "E-Mail-Adresse";
+		$veranstaltung = "Veranstaltungsnummer und -titel";
+		$dozent = "Veranstaltungsleitung";
+		$abgabe = "Ort und Datum der Abgabe: München, den";
+		$einleitung = "Einleitung";
+		$durchfuehrung = "Durchführungsteil";
+		$schluss = "Schlussteil";
+		$anhang = "Anhang";
+		$erklaerung = "Eigenständigkeitserklärung";
+		$erklaerung_text = "Ich, \getAuthor, versichere, dass ich die vorliegende Arbeit selbstständig und ohne fremde Hilfe angefertigt habe und keine anderen als die angegebenen Hilfsmittel benutzt und die verwendete Literatur vollständig aufgeführt sowie Zitate kenntlich gemacht habe. Ich versichere ferner, dass die Arbeit noch nicht zu anderen Prüfungen vorgelegt wurde.";
+		$place = "München, den";
+	}
+	else {
+		$arbeit = "Term paper at";
+		$studiengang = "Course of studies";
+		$fachsemster = "Subject Semester";
+		$matrikelnummer = "Matriculation Number";
+		$email = "E-mail-adress";
+		$veranstaltung = "Course";
+		$dozent = "Lecturer";
+		$abgabe = "Place and date of submission: Munich,";
+		$einleitung = "Introduction";
+		$durchfuehrung = "Execution";
+		$schluss = "Conclusion";
+		$anhang = "Appendix";
+		$erklaerung = "Declaration of autonomy";
+		$erklaerung_text = "I, \getAuthor, certify that I have prepared this thesis independently and without outside assistance and that I have not used any aids other than those indicated and that I have listed the literature used in full and marked citations. I further affirm that the work has not yet been submitted for other examinations.";
+		$place = "Munich,";
+	}
+	if($_GET['font'] == "timesnewroman"){
+		$font = "\usepackage{mathptmx}";
+	}
+	else {
+		$font = "\usepackage[scaled]{helvet}";
+	}
+
 	$inhalt = '
 	\documentclass[12pt, a4paper]{article}
 	\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=4cm]{geometry}
@@ -16,10 +58,11 @@ if (isset($_GET['getUniversity'])){
 	    filecolor=magenta,      
 	    urlcolor=blue,
 	}
-	\usepackage[ngerman]{babel}
+	\usepackage['.$_GET['language'].']{babel}
 	\usepackage[T1]{fontenc}
 	\usepackage[utf8]{inputenc}
-	\usepackage[scaled]{helvet}
+	'.$font.'
+	\usepackage{blindtext}
 	\usepackage[nottoc,numbib]{tocbibind}
 	\pagestyle{fancy}
 	\fancyhf{}
@@ -60,11 +103,11 @@ if (isset($_GET['getUniversity'])){
 	        \vspace{1cm}
 
 				\small
-				Arbeit an der \getFaculty
+				'.$arbeit.' \getFaculty
 
-				der \getUniversity
+				 \getUniversity
 
-				Studiengang: \getProgram
+				'.$studiengang.': \getProgram
 
 				\getSemester
 	            
@@ -76,17 +119,17 @@ if (isset($_GET['getUniversity'])){
 	        
 	        	Name: \getAuthor
 	        
-				Fachsemster: \getSubjectSemester
+				'.$fachsemster.': \getSubjectSemester
 
-				Martikelnummer: \getMatriculationNumber
+				'.$matrikelnummer.': \getMatriculationNumber
 
-				E-Mail-Adresse: \url{\getMail}
+				'.$email.': \url{\getMail}
 
-				Veranstaltungsnummer und -titel: \getCourse
+				'.$veranstaltung.': \getCourse
 
-				Veranstaltungsleitung: \getLecturer
+				'.$dozent.': \getLecturer
 
-				Ort und Datum der Abgabe: München, den \getSubmissionDate
+				'.$abgabe.' \getSubmissionDate
 	            
 	        \vspace{1cm}
 	            
@@ -100,32 +143,34 @@ if (isset($_GET['getUniversity'])){
 	\newpage
 
 
-	\section{Einleitung}
+	\section{'.$einleitung.'}
 
 	'.strip_tags($_GET['introduction']).'
 
-	\section{Durchführungsteil}
+	\section{'.$durchfuehrung.'}
 
 	'.strip_tags($_GET['execution']).'
 
-	\section{Schlussteil}
+	\section{'.$schluss.'}
 
 	'.strip_tags($_GET['conclusion']).'
 
 	\clearpage
 	\newpage
 	\pagenumbering{gobble}
-	\section{Anhang}
+	\section{'.$anhang.'}
 	
 	'.strip_tags($_GET['appendix']).'
 
 	\newpage
-	\section{Eigenständigkeitserklärung}
-	Ich, \getAuthor, versichere, dass ich die vorliegende Arbeit selbstständig und ohne fremde Hilfe angefertigt habe und keine anderen als die angegebenen Hilfsmittel benutzt und die verwendete Literatur vollständig aufgeführt sowie Zitate kenntlich gemacht habe. Ich versichere ferner, dass die Arbeit noch nicht zu anderen Prüfungen vorgelegt wurde. \\
+	\section{'.$erklaerung.'}
+	'.$erklaerung_text.' \\
 
-	München, den \getSubmissionDate
+	'.$place.' \getSubmissionDate
+
 
 	\end{document}';
+	if($_GET['code'] !== "true"){
 	  $datei = fopen("123.tex","w");
 	  fwrite($datei, $inhalt);
 	  fclose($datei);
@@ -149,8 +194,14 @@ if (isset($_GET['getUniversity'])){
 		$pdf = get_data($url);
 
 		echo $pdf;
-
-		unlink('123.tex');
+	}
+	else {
+		header("Content-Type: application/x-tex");
+		header('Content-Disposition: attachment; filename="'.$title.'.tex"');
+		echo $inhalt;
+	}
+	
+	unlink('123.tex');
 }
 else {
 	echo "Nope";
