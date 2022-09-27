@@ -9,7 +9,7 @@ LaTeX-Vorlage für Hausarbeiten an der Hochschule München nach den aktuellen Vo
 Inspieriert von [SimonHirner/Hochschule-Muenchen-LaTeX-Template](https://github.com/SimonHirner/Hochschule-Muenchen-LaTeX-Template).
  
 ## Online konfigurieren / ausprobieren
-Mit diesem Webservice könnt ihr die Vorlage mit eigenen Daten ausprobieren und/oder eine eigene Vorlage erstellen: [https://brembeck.me/hm/](https://brembeck.me/hm/index.php)
+Mit diesem Webservice könnt ihr die Vorlage mit eigenen Daten ausprobieren und/oder eine eigene Vorlage erstellen: [https://brembeck.me/hm/webservice](https://brembeck.me/hm/webservice/index.php)
 
 > Derzeit ohne Literaturverzeichnis und mit fehlerhaften Schriftarten (Helvetica funktioniert, Times New Roman nicht).
 
@@ -43,7 +43,7 @@ LaTeX template for term papers at the University of Applied Sciences Munich acco
 Inspired by [SimonHirner/Hochschule-Muenchen-LaTeX-Template](https://github.com/SimonHirner/Hochschule-Muenchen-LaTeX-Template).
  
 ## Configure / try out online
-With this webservice you can try out the template with your own data and/or create your own template: [https://brembeck.me/hm/](https://brembeck.me/hm/index.php)
+With this webservice you can try out the template with your own data and/or create your own template: [https://brembeck.me/hm/webservice](https://brembeck.me/hm/webservice/index.php)
 
 > Currently without bibliography and with incorrect fonts (Helvetica works, Times New Roman not).
 
