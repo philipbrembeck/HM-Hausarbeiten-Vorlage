@@ -265,7 +265,7 @@ if (isset($_GET['getUniversity'])){
 		    return $data;
 		}
 
-		$url = "https://latexonline.cc/compile?url=https://brembeck.me/hm/123.tex";
+		$url = "https://latexonline.cc/compile?url=https://brembeck.me/hm/webservice/123.tex";
 
 		$pdf = get_data($url);
 
