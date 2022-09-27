@@ -6,37 +6,12 @@
       <meta charset="utf-8">
       <title>HM &middot; LaTeX Hausarbeit</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-      <style>
-         body {
-         font-size: 12pt;
-         padding: 5rem;
-         }
-         .latex sub {
-            vertical-align: -0.1ex;
-            margin-left: -0.1667em;
-            margin-right: -0.025em;
-          }
-          .latex sub, .latex sup {
-            font-size: 0.9em;
-            text-transform:uppercase;
-          }
-          .latex sup {
-            font-size: 0.85em;
-            vertical-align: -0.2em;
-            margin-left: -0.26em;
-            margin-right: -0.05em;
-          }
-         @media only screen and (max-width:48rem) {
-         body {
-         padding: 1rem;
-         }
-         }
-      </style>
+      <link rel="stylesheet" href="includes/style.css">
    </head>
    <body>
-      <h3>Try now: Hausarbeit in <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> (Vorgaben der HM)</h3>
-      <p class="text-muted">Please fill out all fields marked with <span class="text-danger">*</span><br>
-         Illegal charachters (e.g. emojis) will result in a blank page.
+      <h3>Hausarbeit in <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> (Vorgaben der HM)</h3>
+      <p class="text-muted">Bitte fülle alle mit <span class="text-danger">*</span> markierten Felder aus.<br>
+         Verbotene Zeichen (z.B. Emojis) resultieren in einem fehlerhaften Ergebnis.
       </p>
       <form action="index_2.php">
          <div class="form-group row">
@@ -61,12 +36,12 @@
                </div>
                <div class="custom-control custom-radio custom-control-inline">
                   <input name="font" id="font_1" type="radio" required="required" class="custom-control-input" value="timesnewroman"> 
-                  <label for="font_1" class="custom-control-label">Times New Roman (<code>newtxtext</code>, does not look like Times in this web-app)</label>
+                  <label for="font_1" class="custom-control-label">Times New Roman (<code>newtxtext</code>, sieht in dieser Webdarstellung nicht wie Times aus)</label>
                </div>
             </div>
          </div>
          <div class="form-group row">
-            <label class="col-4">Nur Source-Code (kein PDF) generieren?<span class="text-danger">*</span></label> 
+            <label class="col-4"><span class="latex">L<sup>A</sup>T<sub>E</sub>X</span>-Source-Code (kein PDF) generieren?<span class="text-danger">*</span></label> 
             <div class="col-8">
                <div class="custom-control custom-radio custom-control-inline">
                   <input name="code" id="code_0" type="radio" required="required" class="custom-control-input" value="true"> 
@@ -76,6 +51,7 @@
                   <input name="code" id="code_1" type="radio" required="required" class="custom-control-input" value="false" checked>  
                   <label for="code_1" class="custom-control-label">Nein</label>
                </div>
+               <span id="textHelpBlock" class="form-text text-muted">Bei der Angabe "Nein" werden deine eingebenen Daten an latexonline.cc weitergegeben.</span>
             </div>
          </div>
          <div class="form-group">

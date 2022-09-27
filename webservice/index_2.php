@@ -1,14 +1,4 @@
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-function page_1() {
-    foreach ($_GET as $key => $element) {
-      echo "<input type=\"hidden\" name=\"$key\" id=\"$key\" value=\"$element\">";
-    }
-}
-?>
+<?php require_once("includes/forms.inc.php"); ?>
 <!DOCTYPE html>
 <html lang="de">
    <head>
@@ -17,58 +7,33 @@ function page_1() {
       <meta charset="utf-8">
       <title>HM &middot; LaTeX Hausarbeit</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-      <style>
-         body {
-         font-size: 12pt;
-         padding: 5rem;
-         }
-         .latex sub {
-            vertical-align: -0.1ex;
-            margin-left: -0.1667em;
-            margin-right: -0.025em;
-          }
-          .latex sub, .latex sup {
-            font-size: 0.9em;
-            text-transform:uppercase;
-          }
-          .latex sup {
-            font-size: 0.85em;
-            vertical-align: -0.2em;
-            margin-left: -0.26em;
-            margin-right: -0.05em;
-          }
-         @media only screen and (max-width:48rem) {
-         body {
-         padding: 1rem;
-         }
-         }
-      </style>
+      <link rel="stylesheet" href="includes/style.css">
    </head>
    <body>
-      <h3>Try now: Hausarbeit in <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> (Vorgaben der HM)</h3>
-      <p class="text-muted">Please fill out all fields marked with <span class="text-danger">*</span><br>
-         Illegal charachters (e.g. emojis) will result in a blank page.
+      <h3>Hausarbeit in <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> (Vorgaben der HM)</h3>
+      <p class="text-muted">Bitte fülle alle mit <span class="text-danger">*</span> markierten Felder aus.<br>
+         Verbotene Zeichen (z.B. Emojis) resultieren in einem fehlerhaften Ergebnis.
       </p>
       <form action="script.php">
          <div class="form-group">
             <label for="introduction">Einleitung<span class="text-danger">*</span></label> 
             <textarea id="introduction" name="introduction" cols="40" rows="4" required="required" class="form-control"></textarea>
-            <span id="textHelpBlock" class="form-text text-muted">Here you can use <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> code like <code>\blindtext</code></span>
+            <span id="textHelpBlock" class="form-text text-muted">Hier kannst du <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> Code wie <code>\blindtext</code> benutzen.</span>
          </div>
          <div class="form-group">
             <label for="execution">Hauptteil<span class="text-danger">*</span></label> 
             <textarea id="execution" name="execution" cols="40" rows="4" required="required" class="form-control"></textarea>
-            <span id="textHelpBlock" class="form-text text-muted">Here you can use <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> code like <code>\blindmathpaper</code></span>
+            <span id="textHelpBlock" class="form-text text-muted">Hier kannst du <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> Code wie <code>\blindmathpaper</code> benutzen.</span>
          </div>
          <div class="form-group">
             <label for="conclusion">Schlussteil<span class="text-danger">*</span></label> 
             <textarea id="conclusion" name="conclusion" cols="40" rows="4" required="required" class="form-control"></textarea>
-            <span id="textHelpBlock" class="form-text text-muted">Here you can use <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> code like <code>\blinddocument</code></span>
+            <span id="textHelpBlock" class="form-text text-muted">Hier kannst du <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> Code wie <code>\blinddocument</code> benutzen.</span>
          </div>
          <div class="form-group">
             <label for="conclusion">Anhang</label> 
             <textarea id="appendix" name="appendix" cols="40" rows="4" class="form-control"></textarea>
-            <span id="textHelpBlock" class="form-text text-muted">Here you can use <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> code like <code>\subsection{Unterpunkt}</code></span>
+            <span id="textHelpBlock" class="form-text text-muted">Hier kannst du <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> Code wie <code>\subsection{Unterpunkt}</code> benutzen.</span>
          </div>
          <?php page_1(); ?>
          <div class="form-group">
