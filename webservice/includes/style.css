@@ -1,0 +1,49 @@
+body {
+    font-size: 12pt;
+    padding: 5rem;
+}
+
+.latex sub {
+    vertical-align: -0.1ex;
+    margin-left: -0.1667em;
+    margin-right: -0.025em;
+}
+
+.latex sub,
+.latex sup {
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.latex sup {
+    font-size: 0.85em;
+    vertical-align: -0.2em;
+    margin-left: -0.26em;
+    margin-right: -0.05em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #000;
+        color: #FFF;
+    }
+
+    .form-control {
+        color: #fff;
+        background-color: #1e272e;
+        background-clip: padding-box;
+        border: 1px solid grey;
+    }
+
+    .form-control:focus {
+        color: #fff;
+        background-color: #485460;
+        border-color: #80bdff;
+    }
+}
+
+@media only screen and (max-width:48rem) {
+    body {
+        padding: 1rem;
+    }
+}
