@@ -4,7 +4,7 @@
 # Hochchule München Hausarbeiten Vorlage
 Click [here for english](#university-of-applied-sciences-munich-term-paper-template).
 
-LaTeX-Vorlage für Hausarbeiten an der Hochschule München nach den aktuellen Vorgaben zum wissenschaftlichen Arbeiten.
+LaTeX-Vorlage für Hausarbeiten an der Hochschule München nach den aktuellen Vorgaben zum wissenschaftlichen Arbeiten ([Schönberger, 09/2017](https://w3-mediapool.hm.edu/mediapool/media/fk11/fk11_lokal/neu_struktur/9b/Standards_Wiss_Arbeiten_2017_Schoenberger.pdf)).
 
 Inspieriert von [SimonHirner/Hochschule-Muenchen-LaTeX-Template](https://github.com/SimonHirner/Hochschule-Muenchen-LaTeX-Template).
  
@@ -38,7 +38,7 @@ Dieses Repository und seine Inhalte stehen unter der [WTFPL – Do What the Fuck
 
 # University of Applied Sciences Munich Term Paper Template
 
-LaTeX template for term papers at the University of Applied Sciences Munich according to the current guidelines for scientific work.
+LaTeX template for term papers at the University of Applied Sciences Munich according to the current guidelines for scientific work ([Schönberger, 09/2017](https://w3-mediapool.hm.edu/mediapool/media/fk11/fk11_lokal/neu_struktur/9b/Standards_Wiss_Arbeiten_2017_Schoenberger.pdf)).
 
 Inspired by [SimonHirner/Hochschule-Muenchen-LaTeX-Template](https://github.com/SimonHirner/Hochschule-Muenchen-LaTeX-Template).
  
