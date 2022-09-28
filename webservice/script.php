@@ -88,8 +88,6 @@ if (isset($_GET['getUniversity'])){
 	maxcitenames=1,
 	sortcites=true
 	]{biblatex}
-	\ExecuteBibliographyOptions{maxcitenames=1,mincitenames=1}
-	\DefineBibliographyStrings{german}{urlseen = {Abgerufen am}, andothers = {et al\adddot}}
 	\begin{filecontents}{bibliography.bib}
 	@misc{A01,
 	  author = {Author, A.},
