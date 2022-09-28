@@ -1,6 +1,11 @@
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=4cm]{geometry}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amsthm,amsfonts,amssymb,amscd, color, comment, graphicx, environ}
-\usepackage{float, lastpage, enumerate, fancyhdr, listings, sectsty, thmtools, shadethm, hyperref, mathrsfs, csquotes}
+\usepackage{float, lastpage, enumerate, fancyhdr, listings, sectsty, thmtools, shadethm, hyperref, mathrsfs}
+\usepackage[babel=true,strict=true,german=quotes,threshold=1]{csquotes}
+% \renewcommand\mkblockquote[4]{\leavevmode\llap{,,}#1#2#3``#4} Only use if you want all blockquotes in quotation marks
 \usepackage[onehalfspacing]{setspace}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[framemethod=TikZ]{mdframed}
@@ -12,9 +17,6 @@
     filecolor=magenta,      
     urlcolor=blue,
 }
-\usepackage[ngerman]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
 \usepackage[scaled]{helvet}
 
 % If bibliography does not work, open your terminal and type
@@ -24,12 +26,13 @@
 backend=biber,
 style=authoryear-icomp,
 maxbibnames=9,
-maxcitenames=1,
+maxcitenames=2,
 sortcites=true
 ]{biblatex}
-\addbibresource{biliography.bib}
-\ExecuteBibliographyOptions{maxcitenames=1,mincitenames=1}
+\addbibresource{bibliography.bib}
+\ExecuteBibliographyOptions{maxcitenames=2,mincitenames=2}
 \DefineBibliographyStrings{german}{urlseen = {Abgerufen am}, andothers = {et al\adddot}}
+\DeclareFieldFormat{url}{Verfügbar unter:\addcolon\space\url{#1}}
 
 \usepackage[nottoc,numbib]{tocbibind}
 \pagestyle{fancy}
