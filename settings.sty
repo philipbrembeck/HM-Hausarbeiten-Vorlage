@@ -33,6 +33,7 @@ sortcites=true
 \ExecuteBibliographyOptions{maxcitenames=2,mincitenames=2}
 \DefineBibliographyStrings{german}{urlseen = {Abgerufen am}, andothers = {et al\adddot}}
 \DeclareFieldFormat{url}{Verfügbar unter:\addcolon\space\url{#1}}
+\DeclareFieldFormat{urldate}{\mkbibbrackets{\bibstring{urlseen}\space#1}}
 
 \usepackage[nottoc,numbib]{tocbibind}
 \pagestyle{fancy}
