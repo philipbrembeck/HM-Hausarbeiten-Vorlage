@@ -30,6 +30,19 @@ Mit diesem Webservice könnt ihr die Vorlage mit eigenen Daten ausprobieren und/
 * Name, Fakultät, Titel der Arbeit, etc. können in der [`variables.sty`](variables.sty) geändert werden.
 * In dem Verzeichnis [`img`](img) können Bilder hinzugefügt werden. 
 
+## Nutzung
+
+* Benutze eine LaTeX Distribution und einen entsprechenden Editor (z.B. [Texifier](https://www.texifier.com))
+* Lege eine `bibliography.bib`-Datei für deine Quellenangaben an (z.B. mit Hilfe von [JabRef (Cross-Plattform, Open-Source)](https://www.jabref.org))
+* Lege alle Variablen in [`variables.sty`](variables.sty) fest
+* Zitiere in dieser Form:
+
+  |            | Vergleiche                                                                                                       | Vollzitat                                                                                                        | Eingerücktes Vollzitat (lang)                                                                                    |
+  |------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+  | **LaTeX Code** | ````Ein Beispieltext (vgl. \cite{samplebook})````                                                                | ````\enquote{Ein Beispieltext} \parencite[S. 55]{samplebook}````                                                 | ````\blockquote{\enquote{Ein längerer Beispieltext} \parencite{samplebook}}````                               |
+  | **Beispiel**   | <img src="https://user-images.githubusercontent.com/4144601/192776150-47a8b1b1-2589-4b7f-aa73-24e3d169520e.png"> | <img src="https://user-images.githubusercontent.com/4144601/192776369-51057e19-62d0-4b22-b423-08fa08858604.png"> | <img src="https://user-images.githubusercontent.com/4144601/192776440-80d72dbc-ffe5-4999-a503-615deea39505.png"> |
+
+
 ## Lizenz
 Dieses Repository und seine Inhalte stehen unter der [WTFPL – Do What the Fuck You Want to Public License](LICENSE)-Lizenz.
 
@@ -63,6 +76,18 @@ With this webservice you can try out the template with your own data and/or crea
 * Packages as well as style settings can be added/changed in [`settings.sty`](settings.sty).
 * Name, faculty, title of work, etc. can be changed in the [`variables.sty`](variables.sty).
 * Images can be added in the [`img`](img) directory. 
+
+## Usage
+
+* Use a LaTeX distribution and an editor (e.g. [Texifier](https://www.texifier.com))
+* Create a `bibliography.bib`-file for your bibliography (e.g. use [JabRef (Cross-Plattform, Open-Source)](https://www.jabref.org))
+* Set all variables in [`variables.sty`](variables.sty)
+* Cite like this:
+
+  |            | cf.                                                                                                       | Full citation                                                                                                        | Indented full citation (long)                                                                                   |
+  |------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+  | **LaTeX Code** | ````A sampletext (cf. \cite{samplebook})````                                                                | ````\enquote{A sampletext} \parencite[S. 55]{samplebook}````                                                 | ````\blockquote{\enquote{A longer sampletext} \parencite{samplebook}}````                               |
+  | **Examples**   | <img src="https://user-images.githubusercontent.com/4144601/192776150-47a8b1b1-2589-4b7f-aa73-24e3d169520e.png"> | <img src="https://user-images.githubusercontent.com/4144601/192776369-51057e19-62d0-4b22-b423-08fa08858604.png"> | <img src="https://user-images.githubusercontent.com/4144601/192776440-80d72dbc-ffe5-4999-a503-615deea39505.png"> |
 
 ## License
 This repository and its contents are licensed under the [WTFPL - Do What the Fuck You Want to Public License](LICENSE).
