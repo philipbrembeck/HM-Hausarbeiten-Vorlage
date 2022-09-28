@@ -88,7 +88,6 @@ if (isset($_GET['getUniversity'])){
 	maxcitenames=1,
 	sortcites=true
 	]{biblatex}
-	\addbibresource{biliography.bib}
 	\ExecuteBibliographyOptions{maxcitenames=1,mincitenames=1}
 	\DefineBibliographyStrings{german}{urlseen = {Abgerufen am}, andothers = {et al\adddot}}
 	\begin{filecontents*}[overwrite]{bibliography.bib}
