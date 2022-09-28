@@ -90,7 +90,7 @@ if (isset($_GET['getUniversity'])){
 	]{biblatex}
 	\ExecuteBibliographyOptions{maxcitenames=1,mincitenames=1}
 	\DefineBibliographyStrings{german}{urlseen = {Abgerufen am}, andothers = {et al\adddot}}
-	\begin{filecontents*}[overwrite]{bibliography.bib}
+	\begin{filecontents}{bibliography.bib}
 	@misc{A01,
 	  author = {Author, A.},
 	  year = {2001},
@@ -101,10 +101,8 @@ if (isset($_GET['getUniversity'])){
 	  year = {2002},
 	  title = {Bravo},
 	}
-	\end{filecontents*}
-
+	\end{filecontents} 
 	\addbibresource{biliography.bib}
-	\nocite{*}
 	\pagestyle{fancy}
 	\fancyhf{}
 	\renewcommand{\headrulewidth}{0pt}
