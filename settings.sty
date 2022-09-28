@@ -16,15 +16,21 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[scaled]{helvet}
+
+% If bibliography does not work, open your terminal and type
+% biber --cache 
+% delete the folder that is shown
 \usepackage[
 backend=biber,
-style=authoryear-ibid,
+style=authoryear-icomp,
+maxbibnames=9,
+maxcitenames=1,
 sortcites=true
 ]{biblatex}
 \addbibresource{biliography.bib}
-\DefineBibliographyStrings{german}{
-urlseen = {Abgerufen am},
-}
+\ExecuteBibliographyOptions{maxcitenames=1,mincitenames=1}
+\DefineBibliographyStrings{german}{urlseen = {Abgerufen am}, andothers = {et al\adddot}}
+
 \usepackage[nottoc,numbib]{tocbibind}
 \pagestyle{fancy}
 \fancyhf{}
