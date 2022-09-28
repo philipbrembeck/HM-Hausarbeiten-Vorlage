@@ -10,13 +10,15 @@
    </head>
    <body>
       <h3>Hausarbeit in <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> (Vorgaben der HM)</h3>
-      <p><span class="text-warning"><bold>Hinweis:</bold></span> Das Ergebnis dieses Formulars dient nur zu Testzwecken und ist nicht immer auf dem neuesten Stand. Für produktive wissenschaftliche Arbeiten sollte die <a href="https://github.com/philipbrembeck/HM-Hausarbeiten-Vorlage"><span class="latex">L<sup>A</sup>T<sub>E</sub>X</span>-Vorlage auf GitHub</a> verwendet werden.<br>
-      Diese Vorlage kann derzeit nicht:</p>
-      <ul>
-         <li>Schriftarten richtig darstellen</li>
-         <li>Bibliographien/Literaturverzeichnisse darstellen</li>
-         <li><code>.bib</code>-Dateien einbinden</li>
-      </ul>
+      <div class="alert alert-info" role="alert">
+         <p><span class="text-warning"><bold>Hinweis:</bold></span> Das Ergebnis dieses Formulars dient nur zu Testzwecken und ist nicht immer auf dem neuesten Stand. Für produktive wissenschaftliche Arbeiten sollte die <a href="https://github.com/philipbrembeck/HM-Hausarbeiten-Vorlage"><span class="latex">L<sup>A</sup>T<sub>E</sub>X</span>-Vorlage auf GitHub</a> verwendet werden.<br>
+         Diese Vorlage kann derzeit nicht:</p>
+         <ul>
+            <li>Schriftarten richtig darstellen</li>
+            <li>Bibliographien/Literaturverzeichnisse darstellen</li>
+            <li><code>.bib</code>-Dateien einbinden</li>
+         </ul>
+      </div>
       <p class="text-muted">Bitte fülle alle mit <span class="text-danger">*</span> markierten Felder aus.<br>
          Verbotene Zeichen (z.B. Emojis) resultieren in einem fehlerhaften Ergebnis.
       </p>
