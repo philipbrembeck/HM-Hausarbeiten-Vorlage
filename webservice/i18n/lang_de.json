@@ -1,0 +1,40 @@
+{
+	"title": "Hausarbeit in <span class=\"latex\">L<sup>A<\/sup>T<sub>E<\/sub>X<\/span> (Vorgaben der HM)",
+	"requirements": "Bitte f\u00FClle alle mit <span class=\"text-danger\">*<\/span> markierten Felder aus.<br>\r\nVerbotene Zeichen (z.B. Emojis) resultieren in einem fehlerhaften Ergebnis.",
+	"index": {
+		"alert": {
+			"heading": "Hinweis",
+			"body": "Das Ergebnis dieses Formulars dient nur zu Testzwecken und ist nicht immer auf dem neuesten Stand. F\u00FCr produktive wissenschaftliche Arbeiten sollte die <a href=\"https:\/\/github.com\/philipbrembeck\/HM-Hausarbeiten-Vorlage\"><span class=\"latex\">L<sup>A<\/sup>T<sub>E<\/sub>X<\/span>-Vorlage auf GitHub<\/a> verwendet werden.<br>\r\nDiese Vorlage kann derzeit nicht:<\/p>\r\n<ul>\r\n<li>Schriftarten richtig darstellen<\/li>\r\n<li>Bibliographien\/Literaturverzeichnisse darstellen<\/li>\r\n<li><code>.bib<\/code>-Dateien einbinden<\/li>\r\n<\/ul>"
+		},
+		"form": {
+			"language": "Sprache",
+			"font": "Schriftart",
+			"pdf": "<span class=\"latex\">L<sup>A<\/sup>T<sub>E<\/sub>X<\/span>-Source-Code (kein PDF) generieren?",
+			"yes": "Ja",
+			"no": "Nein",
+			"pdfwarn": "Bei der Angabe \"Nein\" werden deine eingebenen Daten an latexonline.cc weitergegeben.",
+			"university": "Universität",
+			"faculty": "Fakultät",
+			"title": "Titel der Arbeit",
+			"author": "Autor der Arbeit",
+			"mail": "E-Mail-Adresse",
+			"matriculationnumber": "Matrikelnummer",
+			"course": "Veranstaltungstitel",
+			"program": "Studiengang",
+			"subjectsemester": "Fachsemester",
+			"semester": "Aktuelles Semester",
+			"lecturer": "Dozent:in / Betreuer:in",
+			"nextpage": "Weiter"
+		}
+	},
+	"index2": {
+		"form": {
+			"introduction": "Einleitung",
+			"execution": "Hauptteil",
+			"conclusion": "Schlussteil",
+			"appendix": "Anhang",
+			"eg": "z.B.",
+			"submit": "Dokument erstellen"
+		}
+	}
+}

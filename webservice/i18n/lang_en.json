@@ -1,0 +1,40 @@
+{
+	"title": "Term paper in <span class=\"latex\">L<sup>A<\/sup>T<sub>E<\/sub>X<\/span> (specifications of the HM)",
+	"requirements": "Please fill in all fields marked with <span class=\"text-danger\">*<\/span>.<br>\r\nForbidden characters (e.g. emojis) will result in an incorrect result.",
+	"index": {
+		"alert": {
+			"heading": "Notice",
+			"body": "The result of this form is for testing purposes only and is not always up to date. For productive scientific work, the <a href=\"https:\/\/github.com\/philipbrembeck\/HM-Hausarbeiten-Vorlage\"><span class=\"latex\">L<sup>A<\/sup>T<sub>E<\/sub>X<\/span>-template on GitHub<\/a> should be used."
+		},
+		"form": {
+			"language": "Language",
+			"font": "Font-family",
+			"pdf": "Just generate <span class=\"latex\">L<sup>A<\/sup>T<sub>E<\/sub>X<\/span>-Source-Code (No PDF)",
+			"yes": "Yes",
+			"no": "No",
+			"pdfwarn": "If you specify \"No\", your entered data will be forwarded to latexonline.cc.",
+			"university": "University",
+			"faculty": "Faculty",
+			"title": "Title of work",
+			"author": "Author",
+			"mail": "E-mail-adress",
+			"matriculationnumber": "Matriculation Number",
+			"course": "Title of course",
+			"program": "Program",
+			"subjectsemester": "Subject semester",
+			"semester": "Current semester",
+			"lecturer": "Lecturer",
+			"nextpage": "Next"
+		}
+	},
+	"index2": {
+		"form": {
+			"introduction": "Introduction",
+			"execution": "Execution",
+			"conclusion": "Conclusion",
+			"appendix": "Appendix",
+			"eg": "e.g.",
+			"submit": "Create document"
+		}
+	}
+}

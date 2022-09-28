@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => '99d6b5c96d421ef10008dbda7cfaaece3c3b1902',
+        'name' => '__root__',
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '99d6b5c96d421ef10008dbda7cfaaece3c3b1902',
+            'dev_requirement' => false,
+        ),
+        'mustangostang/spyc' => array(
+            'pretty_version' => '0.6.2',
+            'version' => '0.6.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../mustangostang/spyc',
+            'aliases' => array(),
+            'reference' => '23c35ae854d835f2d7bcc3e3ad743d7e57a8c14d',
+            'dev_requirement' => false,
+        ),
+        'philipp15b/php-i18n' => array(
+            'pretty_version' => 'v4.0.1',
+            'version' => '4.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../philipp15b/php-i18n',
+            'aliases' => array(),
+            'reference' => '693bd6800134ef20e45c070ff382b7ebd143c745',
+            'dev_requirement' => false,
+        ),
+    ),
+);
