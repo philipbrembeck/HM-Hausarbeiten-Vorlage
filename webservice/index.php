@@ -10,8 +10,8 @@
    </head>
    <body>
       <h3>Hausarbeit in <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> (Vorgaben der HM)</h3>
-      <div class="alert alert-secondary" role="alert">
-         <p><span class="text-warning"><bold>Hinweis:</bold></span> Das Ergebnis dieses Formulars dient nur zu Testzwecken und ist nicht immer auf dem neuesten Stand. Für produktive wissenschaftliche Arbeiten sollte die <a href="https://github.com/philipbrembeck/HM-Hausarbeiten-Vorlage"><span class="latex">L<sup>A</sup>T<sub>E</sub>X</span>-Vorlage auf GitHub</a> verwendet werden.<br>
+      <div class="alert alert-warning" role="alert">
+         <p><b>Hinweis:</b> Das Ergebnis dieses Formulars dient nur zu Testzwecken und ist nicht immer auf dem neuesten Stand. Für produktive wissenschaftliche Arbeiten sollte die <a href="https://github.com/philipbrembeck/HM-Hausarbeiten-Vorlage"><span class="latex">L<sup>A</sup>T<sub>E</sub>X</span>-Vorlage auf GitHub</a> verwendet werden.<br>
          Diese Vorlage kann derzeit nicht:</p>
          <ul>
             <li>Schriftarten richtig darstellen</li>
