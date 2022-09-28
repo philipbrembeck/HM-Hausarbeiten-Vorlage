@@ -83,9 +83,29 @@ if (isset($_GET['getUniversity'])){
 	\usepackage[nottoc,numbib]{tocbibind}
 	\usepackage[
 	backend=biber,
-	style=authoryear-ibid,
-	sortcites=true]{biblatex}
+	style=authoryear-icomp,
+	maxbibnames=9,
+	maxcitenames=1,
+	sortcites=true
+	]{biblatex}
 	\addbibresource{biliography.bib}
+	\ExecuteBibliographyOptions{maxcitenames=1,mincitenames=1}
+	\DefineBibliographyStrings{german}{urlseen = {Abgerufen am}, andothers = {et al\adddot}}
+	\begin{filecontents*}[overwrite]{bibliography.bib}
+	@misc{A01,
+	  author = {Author, A.},
+	  year = {2001},
+	  title = {Alpha},
+	}
+	@misc{B02,
+	  author = {Buthor, B.},
+	  year = {2002},
+	  title = {Bravo},
+	}
+	\end{filecontents*}
+
+	\addbibresource{biliography.bib}
+	\nocite{*}
 	\pagestyle{fancy}
 	\fancyhf{}
 	\renewcommand{\headrulewidth}{0pt}
