@@ -11,8 +11,3 @@ if (prefersDarkScheme.matches) {
     document.documentElement.removeAttribute('data-color-mode', 'dark');
     document.documentElement.removeAttribute('data-dark-theme', 'dark_dimmed');
 }
-
-const btn = document.getElementsByClassName('btn');
-btn.addEventListener('click', function handleClick() {
-    btn.textContent = '<span>Loading</span><span class="AnimatedEllipsis"></span>';
-});
