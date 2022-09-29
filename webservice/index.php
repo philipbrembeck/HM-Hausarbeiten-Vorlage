@@ -152,22 +152,12 @@ $i18n->init();
                  </div>
                  <div class="Layout-main">
                      <input id="getLecturer" name="getLecturer" placeholder="Prof. Dr. Mustermann" type="text" required="required" class="form-control"><br>
-                     <button name="submit" type="submit" class="btn btn-primary mb-3 mt-3"><?php echo L::index_form_nextpage; ?>&nbsp; ➔</button>
+                     <button name="submit" type="submit" class="btn btn-primary mb-3 mt-3" id="btn"><?php echo L::index_form_nextpage; ?>&nbsp; ➔</button>
                   </div>
             </div>
          
       </form>
       <p class="color-fg-muted">&copy; 20<?php echo date('y'); ?> <a href="//philipbrembeck.com">Philip Brembeck</a> - Licensed under <a href="https://github.com/philipbrembeck/HM-Hausarbeiten-Vorlage/blob/main/LICENSE">WTFPL</a> &middot; All data collected is immediately deleted after submitting the form.</p>
-
-      <script>
-         const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-         if (prefersDarkScheme.matches) {
-           document.documentElement.setAttribute('data-color-mode', 'dark');
-           document.documentElement.setAttribute('data-dark-theme', 'dark_dimmed');
-         } else {
-           document.documentElement.removeAttribute('data-color-mode', 'dark');
-           document.documentElement.removeAttribute('data-dark-theme', 'dark_dimmed');
-         }
-      </script>
+      <script src="includes/main.js"></script>
    </body>
 </html>
