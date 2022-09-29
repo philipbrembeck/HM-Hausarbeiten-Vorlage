@@ -64,12 +64,6 @@ $i18n->init();
       <p class="color-fg-muted">&copy; 20<?php echo date('y'); ?> <a href="//philipbrembeck.com">Philip Brembeck</a> - Licensed under <a href="https://github.com/philipbrembeck/HM-Hausarbeiten-Vorlage/blob/main/LICENSE">WTFPL</a> &middot; All data collected is immediately deleted after submitting the form.</p>
 
        <script>
-        const btn = document.getElementById('btn');
-        btn.addEventListener('click', function handleClick() {
-          const initialText = '<span>Loading</span><span class="AnimatedEllipsis"></span>';
-          btn.innerHTML = `<span>Loading</span><span class="AnimatedEllipsis"></span>`;
-        });
-
          const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
          if (prefersDarkScheme.matches) {
            document.documentElement.setAttribute('data-color-mode', 'dark');
