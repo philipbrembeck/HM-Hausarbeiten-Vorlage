@@ -1,7 +1,7 @@
 const btn = document.getElementById('btn');
 btn.addEventListener('click', function handleClick() {
-    const initialText = '<span>Loading</span><span class="AnimatedEllipsis"></span>';
-    btn.innerHTML = `<span>Loading</span><span class="AnimatedEllipsis"></span>`;
+    const initialText = '<span>Validating &amp; Loading</span><span class="AnimatedEllipsis"></span>';
+    btn.innerHTML = `<span>Validating &amp; Loading</span><span class="AnimatedEllipsis"></span>`;
 });
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 if (prefersDarkScheme.matches) {
