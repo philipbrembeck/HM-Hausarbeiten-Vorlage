@@ -22,28 +22,30 @@ body {
     margin-right: -0.05em;
 }
 
+.form-control {
+    width: 85%;
+}
+
+li {
+    list-style: none;
+}
+
+code {
+    color: var(--color-danger-fg);
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background: #000;
         color: #FFF;
-    }
-
-    .form-control {
-        color: #fff;
-        background-color: #1e272e;
-        background-clip: padding-box;
-        border: 1px solid grey;
-    }
-
-    .form-control:focus {
-        color: #fff;
-        background-color: #485460;
-        border-color: #80bdff;
     }
 }
 
 @media only screen and (max-width:48rem) {
     body {
         padding: 1.5rem;
+    }
+    .form-control {
+        width: 100%;
     }
 }

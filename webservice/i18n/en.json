@@ -1,6 +1,6 @@
 {
 	"title": "Term paper in <span class=\"latex\">L<sup>A<\/sup>T<sub>E<\/sub>X<\/span> (specifications of the HM)",
-	"requirements": "Please fill in all fields marked with <span class=\"text-danger\">*<\/span>.<br>\r\nForbidden characters (e.g. emojis) will result in an incorrect result.",
+	"requirements": "Please fill in all fields marked with <span class=\"color-fg-danger\">*<\/span>.<br>\r\nForbidden characters (e.g. emojis) will result in an incorrect result.",
 	"index": {
 		"alert": {
 			"heading": "Notice",
