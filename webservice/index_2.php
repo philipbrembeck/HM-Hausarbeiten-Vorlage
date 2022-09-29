@@ -62,6 +62,6 @@ $i18n->init();
         </div>
       </form>
       <p class="color-fg-muted">&copy; 20<?php echo date('y'); ?> <a href="//philipbrembeck.com">Philip Brembeck</a> - Licensed under <a href="https://github.com/philipbrembeck/HM-Hausarbeiten-Vorlage/blob/main/LICENSE">WTFPL</a> &middot; All data collected is immediately deleted after submitting the form.</p>
-       <script src="includes/main.js"></script>
+      <script src="includes/main.js"></script>
    </body>
 </html>
