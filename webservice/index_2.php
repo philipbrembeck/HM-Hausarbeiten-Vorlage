@@ -57,7 +57,7 @@ $i18n->init();
           <div class="form-group-body">
             <textarea id="appendix" name="appendix" cols="40" rows="4" class="form-control"></textarea>
             <span id="textHelpBlock" class="form-text color-fg-subtle"><?php echo L::index2_form_eg; ?> <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> Code <code>\subsection{Unterpunkt}</code></span><br>
-            <button name="submit" type="submit" class="btn btn-primary mb-3 mt-3" id="btn"><?php echo L::index2_form_submit; ?></button>
+            <button name="submit" type="submit" class="btn btn-primary mb-3 mt-3"><?php echo L::index2_form_submit; ?></button>
           </div>
         </div>
       </form>
