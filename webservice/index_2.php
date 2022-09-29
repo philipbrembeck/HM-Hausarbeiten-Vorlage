@@ -57,26 +57,11 @@ $i18n->init();
           <div class="form-group-body">
             <textarea id="appendix" name="appendix" cols="40" rows="4" class="form-control"></textarea>
             <span id="textHelpBlock" class="form-text color-fg-subtle"><?php echo L::index2_form_eg; ?> <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> Code <code>\subsection{Unterpunkt}</code></span><br>
-            <button name="submit" type="submit" class="btn btn-primary mb-3 mt-3"><?php echo L::index2_form_submit; ?></button>
+            <button name="submit" type="submit" class="btn btn-primary mb-3 mt-3" id="btn"><?php echo L::index2_form_submit; ?></button>
           </div>
         </div>
       </form>
       <p class="color-fg-muted">&copy; 20<?php echo date('y'); ?> <a href="//philipbrembeck.com">Philip Brembeck</a> - Licensed under <a href="https://github.com/philipbrembeck/HM-Hausarbeiten-Vorlage/blob/main/LICENSE">WTFPL</a> &middot; All data collected is immediately deleted after submitting the form.</p>
-
-       <script>
-         const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-         if (prefersDarkScheme.matches) {
-           document.documentElement.setAttribute('data-color-mode', 'dark');
-           document.documentElement.setAttribute('data-dark-theme', 'dark_dimmed');
-         } else {
-           document.documentElement.removeAttribute('data-color-mode', 'dark');
-           document.documentElement.removeAttribute('data-dark-theme', 'dark_dimmed');
-         }
-
-         const btn = document.getElementsByClassName('btn');
-         btn.addEventListener('click', function handleClick() {
-          btn.textContent = '<span>Loading</span><span class="AnimatedEllipsis"></span>';
-        });
-      </script>
+       <script src="includes/main.js"></script>
    </body>
 </html>
