@@ -1,10 +1,15 @@
-
 <img src="https://user-images.githubusercontent.com/4144601/192153979-576def8f-cf69-497b-834c-2c7528971e73.png" alt="LATEX Logo" width="80" align="right">
 
 # Hochchule München Hausarbeiten Vorlage FK11
 Click [here for english](#university-of-applied-sciences-munich-term-paper-template-fk11).
 
 LaTeX-Vorlage für Hausarbeiten an der Hochschule München nach den aktuellen Vorgaben zum wissenschaftlichen Arbeiten ([Schönberger, 09/2017](https://w3-mediapool.hm.edu/mediapool/media/fk11/fk11_lokal/neu_struktur/9b/Standards_Wiss_Arbeiten_2017_Schoenberger.pdf)).
+
+<details>
+ <summary>Vorschau ansehen</summary>
+ 
+ ![Hausarbeit](https://user-images.githubusercontent.com/4144601/198033243-43b2b510-1ef5-4454-8b36-279dc07e92ba.png)
+</details>
  
 ## Online konfigurieren / ausprobieren
 Mit diesem Webservice könnt ihr die Vorlage mit eigenen Daten ausprobieren und/oder eine eigene Vorlage erstellen: [https://brembeck.me/hm/webservice](https://brembeck.me/hm/webservice/index.php)
@@ -50,6 +55,12 @@ Dieses Repository und seine Inhalte stehen unter der [WTFPL – Do What the Fuck
 # University of Applied Sciences Munich Term Paper Template FK11
 
 LaTeX template for term papers at the University of Applied Sciences Munich according to the current guidelines for scientific work ([Schönberger, 09/2017](https://w3-mediapool.hm.edu/mediapool/media/fk11/fk11_lokal/neu_struktur/9b/Standards_Wiss_Arbeiten_2017_Schoenberger.pdf)).
+
+<details>
+ <summary>Look at a preview</summary>
+ 
+ ![Hausarbeit](https://user-images.githubusercontent.com/4144601/198033243-43b2b510-1ef5-4454-8b36-279dc07e92ba.png)
+</details>
  
 ## Configure / try out online
 With this webservice you can try out the template with your own data and/or create your own template: [https://brembeck.me/hm/webservice](https://brembeck.me/hm/webservice/index.php)
