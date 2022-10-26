@@ -2,7 +2,7 @@
 <img src="https://user-images.githubusercontent.com/4144601/192153979-576def8f-cf69-497b-834c-2c7528971e73.png" alt="LATEX Logo" width="80" align="right">
 
 # Hochchule München Hausarbeiten Vorlage FK11
-Click [here for english](#university-of-applied-sciences-munich-term-paper-template).
+Click [here for english](#university-of-applied-sciences-munich-term-paper-template-fk11).
 
 LaTeX-Vorlage für Hausarbeiten an der Hochschule München nach den aktuellen Vorgaben zum wissenschaftlichen Arbeiten ([Schönberger, 09/2017](https://w3-mediapool.hm.edu/mediapool/media/fk11/fk11_lokal/neu_struktur/9b/Standards_Wiss_Arbeiten_2017_Schoenberger.pdf)).
  
